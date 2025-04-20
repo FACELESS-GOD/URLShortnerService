@@ -1,11 +1,15 @@
 package Utility
 
 import (
+	"context"
+
 	Config "github.com/FACELESS-GOD/URLShortnerService.git/Helper/MetaData"
 	"github.com/redis/go-redis/v9"
 )
 
 var RedisInstance *redis.Client
+
+var Context = context.Background()
 
 func InitaiteRedisInstance() {
 	client := redis.NewClient(&redis.Options{

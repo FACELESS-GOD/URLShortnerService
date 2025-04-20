@@ -5,6 +5,8 @@ import "os"
 var RedisConnString string
 var DbConnString string
 
+var MainURL string = "localhost:9030"
+
 func InitiateConfig() {
 	currDbStringName := "DBConnProd"
 	//currDbStringName := "DBConnTest"
